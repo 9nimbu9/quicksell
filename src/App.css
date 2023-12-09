@@ -1,0 +1,98 @@
+/* App.css */
+body{
+  margin: 0;
+}
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .kanban-board {
+    display: flex;
+    gap: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .kanban-column {
+    flex: 1;
+    border-radius: 8px;
+    padding: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .kanban-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 6%;
+    width: 100%;
+    height: auto;
+    font-size: small;
+  }
+  
+  /* Add more styles as needed */
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin-bottom: 5px;
+  }
+  
+  p {
+    color: #666;
+    font-size: 14px;
+  }
+
+  .rounded-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .rounded-checkbox input {
+    display: none; /* Hide the default checkbox */
+  }
+
+  
+.checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #2196f3; /* Border color for the checkbox */
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rounded-checkbox input:checked + .checkmark::after {
+    content: '\2713'; /* Unicode checkmark symbol */
+    color: white; /* Color for the checkmark when checked */
+    background-color: #2196f3;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+
+  .options-container{
+    position: absolute;
+    background-color: rgb(227, 223, 223);
+    border: 1px solid black;
+    padding: 1%;
+    border-radius: 3px;  
+  }
+
+  .label-dis {
+    margin-right: 5%;
+  }  
+  
